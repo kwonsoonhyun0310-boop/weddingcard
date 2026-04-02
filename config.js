@@ -36,7 +36,7 @@ const CONFIG = {
   },
 
   wedding: {
-    date: "2026-05-15",
+    date: "2027-05-15",
     time: "11:30",
     venue: "빌라드 지디 청담",
     hall: "단독홀",
@@ -80,6 +80,6 @@ const CONFIG = {
   // ── 링크 공유 시 나타나는 문구 ──
   meta: {
     title: "권순현 ♥ 곽지우 결혼합니다",
-    description: "2026년 5월 15일, 소중한 분들을 초대합니다."
+    description: "2027년 5월 15일, 소중한 분들을 초대합니다."
   }
 };
