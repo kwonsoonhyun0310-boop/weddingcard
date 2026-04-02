@@ -154,15 +154,14 @@
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
           주소 복사
         </button>
-        <div class="location__map animate-item" data-animate="scale-in">
-          <div id="daum_roughmap_loader_1712041856000" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+        <div class="location__map">
+          <div id="daum_roughmap_loader_1712041856000" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%;"></div>
           <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
           <script charset="UTF-8">
             new daum.roughmap.Lander({
               "timestamp" : "1712041856000",
               "key" : "2is2c",
-              "mapWidth" : "320",
-              "mapHeight" : "240"
+              "mapHeight": "240"
             }).render();
           </script>
         </div>
