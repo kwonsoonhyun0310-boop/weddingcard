@@ -155,15 +155,14 @@
           주소 복사
         </button>
         <div class="location__map">
-          <div id="daum_roughmap_loader_1712041856000" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%;"></div>
-          <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-          <script charset="UTF-8">
-            new daum.roughmap.Lander({
-              "timestamp" : "1712041856000",
-              "key" : "2is2c",
-              "mapHeight": "240"
-            }).render();
-          </script>
+          <iframe
+            src="map.html"
+            width="100%"
+            height="260"
+            style="border:0; border-radius: 8px; width: 100%; display: block;"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
         </div>
         <div class="location__links animate-item" data-animate="fade-up">
           <a class="btn btn--kakao" id="kakaoMapBtn" href="#" target="_blank" rel="noopener">카카오맵</a>
