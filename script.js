@@ -304,18 +304,16 @@
     function parentLine(father, mother, fatherDeceased, motherDeceased) {
       const fd = fatherDeceased ? ' deceased' : '';
       const md = motherDeceased ? ' deceased' : '';
-      return `<span class="${fd}">${father}</span> · <span class="${md}">${mother}</span>`;
+      return `<span class="${fd}">${father}</span> <span class="parent-dot">●</span> <span class="${md}">${mother}</span>`;
     }
 
     const parentsHTML = `
       <div class="parent-row">
         ${parentLine(g.father, g.mother, g.fatherDeceased, g.motherDeceased)}
-        <span class="parent-dot">●</span>
         의 아들 <span class="child-name">${g.name}</span>
       </div>
       <div class="parent-row">
         ${parentLine(b.father, b.mother, b.fatherDeceased, b.motherDeceased)}
-        <span class="parent-dot">●</span>
         의 딸 <span class="child-name">${b.name}</span>
       </div>
     `;
@@ -561,7 +559,6 @@
     $('#locationHall').textContent = w.hall;
     $('#locationAddress').textContent = w.address;
     $('#locationTel').textContent = w.tel ? `Tel. ${w.tel}` : '';
-    $('#locationMapImg').src = 'images/location/1.jpg';
     $('#kakaoMapBtn').href = w.mapLinks.kakao || '#';
     $('#naverMapBtn').href = w.mapLinks.naver || '#';
 
