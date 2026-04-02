@@ -48,7 +48,7 @@
                 return;
             }
             const img = new Image();
-            const path = `images/${folder}/${current}.jpg`;
+            const path = `images/${folder}/${current}.jpg?v=2`;
             img.onload = function() {
                 images.push(path);
                 consecutiveFails = 0;
